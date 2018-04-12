@@ -1,0 +1,25 @@
+your custom donut is:
+
+<%= @donut.title %>
+
+with 
+
+<%= @donut.dough %> dough 
+
+and
+
+<%= @donut.frosting %> frosting
+
+with
+
+<%= @donut.topping %> on top,
+
+<div>The price of your donut will be</div>
+
+<%= form_for @donut do |f| %>
+  <%= f.label :price, "The price of your donut will be" %>
+  <%= f.text_field :price, :value => custom_donut_price(@donut.dough,@donut.frosting,@donut.topping) %> 
+
+  <%= f.submit 'confirm', :class => 'btn btn-primary'  %>
+
+  <% end %>
