@@ -3,14 +3,21 @@
   <%= f.text_field :title %> 
   <br>
 
-  <%= f.label :description, "what changes do you want to make" %>
-  <%= f.text_area :description %>
+  <%= f.label :dough, "what kind of dough?" %>
+  <%= f.select(:dough, Donut.doughs.keys.map {|dough| [dough.titleize,dough]}) %>
   <br>
 
-  <%= f.label :email %>
-  <%= f.text_field :email, :value => current_user.email, :readonly => true %>
+  <%= f.label :frosting, "what kind of frosting" %>
+ <%= f.select(:frosting, Donut.frostings.keys.map {|frosting| [frosting.titleize,frosting]}) %>
   <br>
 
-   <%= f.submit 'this is my label', :class => 'btn btn-primary'  %>
+  <%= f.label :topping, "which topping" %>
+ <%= f.select(:topping, Donut.toppings.keys.map {|topping| [topping.titleize,topping]}) %>
+  <br>
 
+   <%= f.submit 'Proceed'  %>
+
+ 
 <% end %>
+
+
