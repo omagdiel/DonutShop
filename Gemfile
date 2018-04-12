@@ -52,3 +52,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'acts_as_votable', '~> 0.11.1'
 gem 'devise'
+gem 'petergate'
