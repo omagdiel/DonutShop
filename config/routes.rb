@@ -9,9 +9,9 @@ Rails.application.routes.draw do
 
  get 'pages/cart', to: 'pages#cart'
 
- root to: 'pages#home'
+ # root to: 'pages#home'
 
-  resources :donuts
+  # resources :donuts
 
   resources :charges, only: [:new, :create]
   # get 'charges/new'

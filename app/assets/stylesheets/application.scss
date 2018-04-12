@@ -1,5 +1,9 @@
 @import "bootstrap";
 
+* {
+font-family: 'Poor Story', cursive;
+}
+
 body {
     margin: 0
 }
@@ -10,6 +14,7 @@ body {
 }
 
 .navbar a {
+    font-family: 'Architects Daughter', cursive;
     float: left;
     display: block;
     color: #FDFFF8;
@@ -60,3 +65,44 @@ body {
  }
 }
 
+.content {
+    margin: 5em;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDFFF8;
+    color: #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px #c6c6c6;
+}
+
+.container {
+    background-color: #FDFFF8;
+}
+
+.about_us {
+    text-align: center;
+}
+
+.about_us h1 {
+    font-size: 35px;
+}
+
+.about_us h3 {
+    font-size: 25px;
+}
+
+.team_photo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+img {
+    margin-top: 20px;
+    width: 50%;
+    height: 50%;
+    border: 2px solid #c6c6c6;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px #c6c6c6;
+}
