@@ -1,10 +1,33 @@
 <h1>Donuts index</h1>
+
+  <% if current_user %>
+      <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Register", new_user_registration_path %>
+      <%= link_to "Login", new_user_session_path %>
+    <% end %>
+
+    
 <h3>when you run your seeds, this will give you the basic donuts</h3>
 
-<h1><% @donuts.each do |donut| %>
+<% @donuts.each do |donut| %>
   <%= donut.title %>
   cost = $<%= donut.price %>
+
+
+<%= link_to like_donut_path(donut), method: :put do %>
+  Upvote
+  <%= donut.get_upvotes.size %>
+<% end %>
+
+<%= link_to dislike_donut_path(donut), method: :put do %>
+  Downvote
+  <%= donut.get_downvotes.size %>
+<% end %>
+
   <br>
-<% end %> </h1>
+
+<% end %> 
 
 <%= link_to "want a custom donut?", new_donut_path %>
+

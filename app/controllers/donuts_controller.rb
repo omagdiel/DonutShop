@@ -1,6 +1,7 @@
 class DonutsController < ApplicationController
+
  before_action :set_donut, only: [:show, :edit, :update, :destroy]
-  # access all: [:index, :show], user: {except: [:destroy, :update, :edit]}, admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :update, :edit]}, site_admin: :all
   
   def index
     @donuts = Donut.all
@@ -44,6 +45,18 @@ class DonutsController < ApplicationController
     end
   end
 
+	def upvote 
+	@donut = Donut.find(params[:id])
+	@donut.upvote_by current_user
+	redirect_to donuts_path
+	end  
+
+	def downvote
+	@donut = Donut.find(params[:id])
+	@donut.downvote_by current_user
+	redirect_to donuts_path
+	end
+
   private
 
   def donut_params
@@ -54,5 +67,4 @@ class DonutsController < ApplicationController
     @donut = Donut.find(params[:id])
   end
   
-
 end
