@@ -52,9 +52,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'acts_as_votable', '~> 0.11.1'
-<<<<<<< HEAD
 gem 'bootstrap', '~> 4.0'
-=======
 gem 'devise'
 
 gem 'stripe'
@@ -63,4 +61,3 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.2',:groups => [:development, :test]
 
 gem 'petergate'
 
->>>>>>> 5136fae023df42b10ad7f8698377d7419be27675
