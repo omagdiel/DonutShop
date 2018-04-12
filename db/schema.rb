@@ -10,8 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20180412165628) do
+=======
 ActiveRecord::Schema.define(version: 20180412194852) do
 
+>>>>>>> 5136fae023df42b10ad7f8698377d7419be27675
 
   create_table "donuts", force: :cascade do |t|
     t.integer "dough", default: 0
@@ -19,6 +23,8 @@ ActiveRecord::Schema.define(version: 20180412194852) do
     t.integer "topping", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< HEAD
+=======
     t.float "price"
     t.string "title"
   end
@@ -39,6 +45,7 @@ ActiveRecord::Schema.define(version: 20180412194852) do
     t.string "roles"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+>>>>>>> 5136fae023df42b10ad7f8698377d7419be27675
   end
 
   create_table "votes", force: :cascade do |t|
