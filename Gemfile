@@ -25,6 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -51,4 +52,13 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'acts_as_votable', '~> 0.11.1'
+
+gem 'bootstrap', '~> 4.0'
+
 gem 'devise'
+
+gem 'stripe'
+# gem 'dotenv', '~> 2.1', '>= 2.1.1', :groups => [:development, :test]
+gem 'dotenv-rails', '~> 2.2', '>= 2.2.2',:groups => [:development, :test]
+
+gem 'petergate'

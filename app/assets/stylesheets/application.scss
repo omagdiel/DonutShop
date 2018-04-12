@@ -1,0 +1,62 @@
+@import "bootstrap";
+
+body {
+    margin: 0
+}
+
+.navbar {
+    background-color: #837EAB;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #FDFFF8;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #81FFFF;
+    color: #3a3a3a;
+    -moz-transition: background-color 200ms ease-in;
+     -webkit-transition: background-color 200ms ease-in;
+     -ms-transition: background-color 200ms ease-in;
+     -o-transition: background-color 200ms ease-in;
+     transition: background-color 200ms ease-in;
+}
+
+/*.active {
+    background-color: #81FFFF;
+    color: #3a3a3a;
+}*/
+
+.navbar .icon {
+ display: none;
+}
+
+@media screen and (max-width: 600px) {
+ .navbar a:not(:first-child) {display: none;}
+ .navbar a.icon {
+   float: right;
+   display: block;
+ }
+}
+
+@media screen and (max-width: 600px) {
+ .navbar.responsive {position: relative;}
+ .navbar.responsive .icon {
+   position: absolute;
+   right: 0;
+   top: 0;
+ }
+ .navbar.responsive a {
+   float: none;
+   display: block;
+   text-align: left;
+ }
+}
+
