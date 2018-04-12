@@ -1,5 +1,8 @@
 <h1>Donuts index</h1>
+<h3>when you run your seeds, this will give you the basic donuts</h3>
 
 <h1><% @donuts.each do |donut| %>
   <%= donut.title %>
+  cost = $<%= donut.price %>
+  <br>
 <% end %> </h1>
