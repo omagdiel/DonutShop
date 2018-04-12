@@ -1,7 +1,7 @@
 class DonutsController < ApplicationController
 
  before_action :set_donut, only: [:show, :edit, :update, :destroy]
-  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
+  access all: [:show, :index], user: {except: [:destroy, :new, :update, :edit]}, site_admin: :all
   
   def index
     @donuts = Donut.all
