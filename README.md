@@ -28,9 +28,4 @@ Things you may want to cover:
 test from andrew lloyd
 test from weston nokes
 test from Matt M
-<<<<<<< HEAD
-test from brett.
-=======
-test from Michael Orr1
-
->>>>>>> 4209fdd4249f239d8eed8c2432b4ae62d6d8b093
+test brett
