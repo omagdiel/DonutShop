@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>DonutShop</title>
-    <%= csrf_meta_tags %>  
+    <%= csrf_meta_tags %>
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -14,7 +14,6 @@
         <a class="nav-link" <%= link_to "Home", root_path %></a>
         <a class="nav-link" <%= link_to "Menu", pages_menu_path %></a>
         <a class="nav-link" <%= link_to "About Us", pages_about_us_path %></a>
-        <a class="nav-link" <%= link_to "Contact", pages_contact_path %></a>
         <a class="nav-link" <%= link_to "Cart", pages_cart_path %></a>
         <% if current_user %>
        <%= link_to "Logout", destroy_user_session_path, method: :delete %>
