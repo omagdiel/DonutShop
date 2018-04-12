@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180412165628) do
+
+ActiveRecord::Schema.define(version: 20180412165249) do
+
+  create_table "donuts", force: :cascade do |t|
+    t.integer "dough", default: 0
+    t.integer "frosting", default: 0
+    t.integer "topping", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
 
   create_table "votes", force: :cascade do |t|
     t.string "votable_type"
