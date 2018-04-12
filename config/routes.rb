@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'pages/home', to: 'pages#home'
 
  get 'pages/menu', to: 'pages#menu'
@@ -32,5 +33,4 @@ Rails.application.routes.draw do
       put "dislike", to: "donuts#downvote"
     end
   end
-
 end
