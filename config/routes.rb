@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'pages/home', to: 'pages#home'
+root 'pages#home'
 
  get 'pages/menu', to: 'pages#menu'
 
@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
  get 'pages/cart', to: 'pages#cart'
 
- root to: 'pages#home'
+ # root to: 'pages#home'
+
+  # resources :donuts
 
   resources :charges, only: [:new, :create]
   # get 'charges/new'
@@ -18,6 +20,7 @@ Rails.application.routes.draw do
   # get 'charges/create'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
 
   # resources :donuts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -29,5 +32,4 @@ Rails.application.routes.draw do
       put "dislike", to: "donuts#downvote"
     end
   end
-
 end
