@@ -10,7 +10,7 @@
     
 <h3>when you run your seeds, this will give you the basic donuts</h3>
 
-<h1><% @donuts.each do |donut| %>
+<% @donuts.each do |donut| %>
   <%= donut.title %>
   cost = $<%= donut.price %>
 
@@ -28,4 +28,7 @@ d
 
   <br>
 
-<% end %> </h1>
+<% end %> 
+
+<%= link_to "want a custom donut?", new_donut_path %>
+

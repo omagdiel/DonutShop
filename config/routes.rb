@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
 root 'pages#home'
 
  get 'pages/menu', to: 'pages#menu'
@@ -19,7 +20,7 @@ root 'pages#home'
   # get 'charges/create'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  
+
 
   # resources :donuts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
@@ -32,5 +33,3 @@ root 'pages#home'
     end
   end
 end
-
-
