@@ -44,6 +44,18 @@ class DonutsController < ApplicationController
     end
   end
 
+	def upvote 
+	@donut = Donut.find(params[:id])
+	@donut.upvote_by current_user
+	redirect_to donuts_path
+	end  
+
+	def downvote
+	@donut = Donut.find(params[:id])
+	@donut.downvote_by current_user
+	redirect_to donuts_path
+	end
+
   private
 
   def donut_params
@@ -54,17 +66,4 @@ class DonutsController < ApplicationController
     @donut = Donut.find(params[:id])
   end
   
-
-
-	def upvote 
-		@donut = Donut.find(params[:id])
-		@donut.upvote_by current_user
-		redirect_to :back
-	end  
-
-	def downvote
-		@donut = Donut.find(params[:id])
-		@donut.downvote_by current_user
-		redirect_to :back
-	end
 end
