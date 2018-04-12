@@ -10,8 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180412181924) do
-
+ActiveRecord::Schema.define(version: 20180412182822) do
 
   create_table "donuts", force: :cascade do |t|
     t.integer "dough", default: 0
@@ -21,7 +20,6 @@ ActiveRecord::Schema.define(version: 20180412181924) do
     t.datetime "updated_at", null: false
     t.float "price"
     t.string "title"
-
   end
 
   create_table "users", force: :cascade do |t|
