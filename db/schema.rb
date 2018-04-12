@@ -12,12 +12,15 @@
 
 ActiveRecord::Schema.define(version: 20180412194852) do
 
+
   create_table "donuts", force: :cascade do |t|
     t.integer "dough", default: 0
     t.integer "frosting", default: 0
     t.integer "topping", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "price"
+    t.string "title"
   end
 
   create_table "users", force: :cascade do |t|

@@ -1,32 +1,68 @@
-# README
+# Donut Shop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Ruby:** 2.4.1
 
-Things you may want to cover:
+**Rails:** 5.1.6
 
-* Ruby version
+**Database:** sqlite3
 
-* System dependencies
+**CRUD** for donuts entires
 
-* Configuration
+**Devise** for authentication
 
-* Database creation
+**Petergate** for authorization
 
-* Database initialization
+**Bootstrap** for styles
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+**AWS**
 
 
 
-test from andrew lloyd
-test from weston nokes
-test from Matt M
-test from Michael Orr1
+### Baseline
+Order Custom Donuts
+- Sign up -> Create/Submit a donut/Delete your own donut
+- "default" Donuts/Options that they can select from to customize.
+- Non-users can purchase donuts
+- Signed up user gets 10% off
+- site-map (everyone)
+- Total up orders and purchase with Stripe payment
+- Low Fidelity Wireframes
+- Fully Responsive HTML/CSS/Flexbox/JS based off of wireframes
+- BONUS look really good front end (JS dropdown, carousels, the works) Users can favorite donuts in profile.  Facebook integration share donuts. They get a percentage of the donuts purchased from the link. 
+
+### Responsibilites
+**Float:** Owen
+**FE:** Jake 2.0
+**FE:** Christian 2.0
+**FE:** Gaven
+**FE:** Jason
+**FE:** Brett
+**FE:** Matt
+**Stripe:** Justin 
+**Stripe:** Aya
+**Fav:** Nick
+**Customize:** Weston
+**Customize:** Jake
+**Users:** Michael 
+
+
+Users
+- Registered
+  - can create/submit/delete donut
+  - can purchase donut
+  - 10% discount total price
+- Everyone 
+  - view sitemap
+  - purchase donuts
+
+Donuts
+- Price
+- Defualt donut build
+- Customize(user)
+  - dough, frosting, toppings, etc
+- Payment(stripe)
+
+Payment
+- total
+
 
